@@ -1,0 +1,240 @@
+File verbosity level: 9
+date       time         ( uptime  ) [ thread name/id]              file:line     v|
+2018-11-01 20:14:25.120 (   0.010s) [     FCE51740]        loguru.hpp:2049     0| Logging to '.cache/cquery.log', mode: 'w', verbosity: 9
+(   0.010s) [main thread  ]        loguru.hpp:1887  | arguments: cquery --log-file=.cache/cquery.log
+(   0.010s) [main thread  ]        loguru.hpp:1890  | Current dir: /home/osmanthus/Repositories/Private/kata/deadfish/src
+(   0.010s) [main thread  ]        loguru.hpp:1892  | stderr verbosity: -1
+(   0.010s) [main thread  ]        loguru.hpp:1893  | -----------------------------------
+(   0.014s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata, normalized=/home/osmanthus/Repositories/Private/kata
+(   0.016s) [querydb      ]     initialize.cc:510   | Init parameters: {"compilationDatabaseCommand":"","compilationDatabaseDirectory":"","cacheDirectory":".cache","cacheFormat":"json","resourceDirectory":"","discoverSystemIncludes":true,"extraClangArguments":[],"progressReportFrequencyMs":500,"emitQueryDbBlocked":false,"emitInactiveRegions":false,"showDocumentLinksOnIncludes":true,"codeLens":{"localVariables":true},"completion":{"enableSnippets":true,"detailedLabel":false,"dropOldRequests":true,"filterAndSort":true,"includeMaxPathSize":30,"includeSuffixWhitelist":[".h",".hpp",".hh"],"includeBlacklist":[],"includeWhitelist":[]},"formatting":{"enabled":true},"diagnostics":{"blacklist":[],"whitelist":[],"frequencyMs":0,"onParse":true,"onType":true},"highlight":{"enabled":false,"blacklist":[],"whitelist":[]},"index":{"attributeMakeCallsToCtor":true,"blacklist":[],"whitelist":[],"comments":2,"enabled":true,"logSkippedPaths":false,"threads":0},"workspaceSymbol":{"maxNum":1000,"sort":true},"xref":{"maxNum":2000},"enableIndexOnDidChange":false}
+(   0.016s) [querydb      ]     initialize.cc:515   | [querydb] Initialize in directory /home/osmanthus/Repositories/Private/kata with uri file:///home/osmanthus/Repositories/Private/kata
+(   0.017s) [querydb      ]     initialize.cc:568   | Using -resource-dir=/usr/lib/clang/7.0.0
+(   0.017s) [stdout       ]          timer.cc:35    | [e2e] Running initialize took 2.2866ms
+(   0.017s) [querydb      ]        project.cc:69    | Failed to normalize /home/osmanthus/Repositories/Private/kata/build
+(   0.017s) [querydb      ]        project.cc:602   | Trying to load /home/osmanthus/Repositories/Private/kata/build/compile_commands.json
+(   0.017s) [querydb      ]        project.cc:609   | Trying to load /home/osmanthus/Repositories/Private/kata/compile_commands.json
+(   0.018s) [querydb      ]        project.cc:627   | Unable to load compile_commands.json located at "/home/osmanthus/Repositories/Private/kata/build/"; using directory listing instead.
+(   0.018s) [querydb      ]        project.cc:506   | cquery has no clang arguments. Considering adding a .cquery file or c_cpp_properties.json or compile_commands.json. See the cquery README for more information.
+(   0.018s) [querydb      ]clang_system_include_extractor.cc:76    | Using compiler drivers /usr/bin/cquery-clang, clang++, g++
+(   0.019s) [querydb      ]clang_system_include_extractor.cc:88    | Running /usr/bin/cquery-clang -E -x c - -v
+(   0.074s) [querydb      ]clang_system_include_extractor.cc:88    | Running clang++ -E -x c - -v -working-directory=/home/osmanthus/Repositories/Private/kata/
+(   0.090s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   0.177s) [querydb      ]clang_system_include_extractor.cc:93    | Output:
+clang version 7.0.0 (tags/RELEASE_700/final)
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/8.2.1
+Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/8.2.1
+Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1
+Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/8.2.1
+Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/8.2.1
+Candidate multilib: .;@m64
+Candidate multilib: 32;@m32
+Selected multilib: .;@m64
+ "/usr/bin/clang-7" -cc1 -triple x86_64-pc-linux-gnu -E -disable-free -disable-llvm-verifier -discard-value-names -main-file-name - -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -dwarf-column-info -debugger-tuning=gdb -v -resource-dir /usr/lib/clang/7.0.0 -working-directory /home/osmanthus/Repositories/Private/kata/ -internal-isystem /usr/local/include -internal-isystem /usr/lib/clang/7.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /home/osmanthus/Repositories/Private/kata/deadfish/src -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fobjc-runtime=gcc -fdiagnostics-show-option -o - -x c - -faddrsig
+clang -cc1 version 7.0.0 based upon LLVM 7.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/include
+ /usr/lib/clang/7.0.0/include
+ /usr/include
+End of search list.
+# 1 "<stdin>"
+# 1 "<built-in>" 1
+# 1 "<built-in>" 3
+# 354 "<built-in>" 3
+# 1 "<command line>" 1
+# 1 "<built-in>" 2
+# 1 "<stdin>" 2
+(   0.177s) [querydb      ]        project.cc:161   | Using system include directory flags
+  -isystem/usr/local/include
+  -isystem/usr/lib/clang/7.0.0/include
+  -isystem/usr/include
+(   0.177s) [querydb      ]        project.cc:165   | To disable this set the discoverSystemIncludes config option to false.
+(   0.177s) [querydb      ]          timer.cc:35    | [perf] Loaded compilation entries (1 files) took 159.159725ms
+(   0.177s) [querydb      ]     initialize.cc:634   | Starting 3 indexers
+(   0.180s) [querydb      ]          timer.cc:35    | [perf] Dispatched initial index requests took 0.21ms
+(   0.181s) [querydb      ]        project.cc:69    | Failed to normalize /home/osmanthus/Repositories/Private/kata/build
+(   0.181s) [querydb      ]        project.cc:602   | Trying to load /home/osmanthus/Repositories/Private/kata/build/compile_commands.json
+(   0.181s) [querydb      ]        project.cc:609   | Trying to load /home/osmanthus/Repositories/Private/kata/compile_commands.json
+(   0.181s) [querydb      ]        project.cc:627   | Unable to load compile_commands.json located at "/home/osmanthus/Repositories/Private/kata/build/"; using directory listing instead.
+(   0.182s) [querydb      ]        project.cc:506   | cquery has no clang arguments. Considering adding a .cquery file or c_cpp_properties.json or compile_commands.json. See the cquery README for more information.
+(   0.182s) [querydb      ]clang_system_include_extractor.cc:76    | Using compiler drivers /usr/bin/cquery-clang, clang++, g++
+(   0.182s) [querydb      ]clang_system_include_extractor.cc:88    | Running /usr/bin/cquery-clang -E -x c - -v
+(   0.184s) [querydb      ]clang_system_include_extractor.cc:88    | Running clang++ -E -x c - -v -working-directory=/home/osmanthus/Repositories/Private/kata/
+(   0.185s) [scan_includes]          timer.cc:35    | [perf] Scanning for includes took 0.296ms
+(   0.189s) [indexer2     ]          utils.cc:298   | Reading /home/osmanthus/Repositories/Private/kata/deadfish/src/.cache/@home@osmanthus@Repositories@Private@kata/deadfish@src@main.c
+(   0.189s) [indexer2     ]          utils.cc:298   | Reading /home/osmanthus/Repositories/Private/kata/deadfish/src/.cache/@home@osmanthus@Repositories@Private@kata/deadfish@src@main.c.json
+(   0.189s) [indexer2     ]import_pipeline.cc:382   | Parsing /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   0.204s) [indexer2     ]          utils.cc:298   | Reading /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   0.207s) [indexer2     ]import_pipeline.cc:412   | Emitting index result for /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   0.207s) [indexer2     ]import_pipeline.cc:433   | Writing cached index to disk for /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   0.291s) [querydb      ]clang_system_include_extractor.cc:93    | Output:
+clang version 7.0.0 (tags/RELEASE_700/final)
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/8.2.1
+Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/8.2.1
+Found candidate GCC installation: /usr/lib/gcc/x86_64-pc-linux-gnu/8.2.1
+Found candidate GCC installation: /usr/lib64/gcc/x86_64-pc-linux-gnu/8.2.1
+Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/8.2.1
+Candidate multilib: .;@m64
+Candidate multilib: 32;@m32
+Selected multilib: .;@m64
+ "/usr/bin/clang-7" -cc1 -triple x86_64-pc-linux-gnu -E -disable-free -disable-llvm-verifier -discard-value-names -main-file-name - -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -dwarf-column-info -debugger-tuning=gdb -v -resource-dir /usr/lib/clang/7.0.0 -working-directory /home/osmanthus/Repositories/Private/kata/ -internal-isystem /usr/local/include -internal-isystem /usr/lib/clang/7.0.0/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /home/osmanthus/Repositories/Private/kata/deadfish/src -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fobjc-runtime=gcc -fdiagnostics-show-option -o - -x c - -faddrsig
+clang -cc1 version 7.0.0 based upon LLVM 7.0.0 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/include
+ /usr/lib/clang/7.0.0/include
+ /usr/include
+End of search list.
+# 1 "<stdin>"
+# 1 "<built-in>" 1
+# 1 "<built-in>" 3
+# 354 "<built-in>" 3
+# 1 "<command line>" 1
+# 1 "<built-in>" 2
+# 1 "<stdin>" 2
+(   0.291s) [querydb      ]        project.cc:161   | Using system include directory flags
+  -isystem/usr/local/include
+  -isystem/usr/lib/clang/7.0.0/include
+  -isystem/usr/include
+(   0.291s) [querydb      ]        project.cc:165   | To disable this set the discoverSystemIncludes config option to false.
+(   0.291s) [querydb      ]          timer.cc:35    | [perf] Loaded compilation entries (1 files) took 110.110271ms
+(   0.291s) [querydb      ]          timer.cc:35    | [perf] Dispatched workspace/didChangeConfiguration index requests took 0.14ms
+(   0.291s) [querydb      ]workspace_did_change_configuration.cc:41    | Flushed all clang complete sessions
+(   0.291s) [indexer0     ]          utils.cc:298   | Reading /home/osmanthus/Repositories/Private/kata/deadfish/src/.cache/@home@osmanthus@Repositories@Private@kata/deadfish@src@main.c
+(   0.291s) [indexer0     ]          utils.cc:298   | Reading /home/osmanthus/Repositories/Private/kata/deadfish/src/.cache/@home@osmanthus@Repositories@Private@kata/deadfish@src@main.c.json
+(   0.291s) [querydb      ]          utils.cc:298   | Reading /home/osmanthus/Repositories/Private/kata/deadfish/src/.cache/@home@osmanthus@Repositories@Private@kata/deadfish@src@main.c
+(   0.291s) [querydb      ]message_handler.cc:81    | "/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c" is being indexed.
+(   0.291s) [querydb      ]          timer.cc:35    | [querydb] Loading cached index file for DidOpen (blocks CodeLens) took 0.187ms
+(   0.291s) [indexer0     ]import_pipeline.cc:264   | Skipping parse; no timestamp change for /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   0.291s) [querydb      ] clang_complete.cc:856   | Flushed completion sessions for /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   0.291s) [querydb      ]text_document_did_open.cc:76    | Flushed clang complete sessions for /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   0.291s) [indexer1     ]          utils.cc:298   | Reading /home/osmanthus/Repositories/Private/kata/deadfish/src/.cache/@home@osmanthus@Repositories@Private@kata/deadfish@src@main.c
+(   0.291s) [indexer1     ]          utils.cc:298   | Reading /home/osmanthus/Repositories/Private/kata/deadfish/src/.cache/@home@osmanthus@Repositories@Private@kata/deadfish@src@main.c.json
+(   0.292s) [indexer1     ]import_pipeline.cc:382   | Parsing /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   0.294s) [querydb      ]import_pipeline.cc:605   | Dropping index as it is already being imported for /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   0.294s) [indexer2     ]import_pipeline.cc:492   | Built index update for /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c (is_delta=0)
+(   0.295s) [querydb      ]          timer.cc:35    | Applying index update for /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c took 0.6ms
+(   2.919s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   2.919s) [comp-preload ] clang_complete.cc:410   | Creating completion session with arguments clang -working-directory=/home/osmanthus/Repositories/Private/kata/ /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c -resource-dir=/usr/lib/clang/7.0.0 -Wno-unknown-warning-option -fparse-all-comments -isystem/usr/local/include -isystem/usr/lib/clang/7.0.0/include -isystem/usr/include -fspell-checking
+(   2.919s) [diag-query   ] clang_complete.cc:410   | Creating completion session with arguments clang -working-directory=/home/osmanthus/Repositories/Private/kata/ /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c -resource-dir=/usr/lib/clang/7.0.0 -Wno-unknown-warning-option -fparse-all-comments -isystem/usr/local/include -isystem/usr/lib/clang/7.0.0/include -isystem/usr/include -fspell-checking
+(   2.937s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   2.938s) [comp-query   ] clang_complete.cc:410   | Creating completion session with arguments clang -working-directory=/home/osmanthus/Repositories/Private/kata/ /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c -resource-dir=/usr/lib/clang/7.0.0 -Wno-unknown-warning-option -fparse-all-comments -isystem/usr/local/include -isystem/usr/lib/clang/7.0.0/include -isystem/usr/include -fspell-checking
+(   2.944s) [comp-query   ]          timer.cc:35    | [complete] TryEnsureDocumentParsed took 6.6391ms
+(   2.944s) [diag-query   ]          timer.cc:35    | [diagnostics] TryEnsureDocumentParsed took 25.25297ms
+(   2.945s) [comp-query   ]          timer.cc:35    | [complete] Creating WorkingFile snapshot took 0.3ms
+(   2.945s) [diag-query   ]          timer.cc:35    | [diagnostics] Creating WorkingFile snapshot took 0.1ms
+(   2.955s) [diag-query   ]          timer.cc:35    | [diagnostics] clang_reparseTranslationUnit took 10.10021ms
+(   2.955s) [comp-query   ]          timer.cc:35    | [complete] clangCodeCompleteAt took 10.10390ms
+(   2.955s) [comp-query   ]          timer.cc:35    | [complete] Building 405 completion results took 0.225ms
+(   2.956s) [comp-query   ]          timer.cc:35    | FilterAndSortCompletionResponse took 0.260ms
+(   2.956s) [stdout       ]          timer.cc:35    | [e2e] Running textDocument/completion took 18.18472ms
+(   3.013s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   3.013s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   3.013s) [diag-query   ]          timer.cc:35    | [diagnostics] TryEnsureDocumentParsed took 0.0ms
+(   3.013s) [diag-query   ]          timer.cc:35    | [diagnostics] Creating WorkingFile snapshot took 0.3ms
+(   3.014s) [querydb      ]          timer.cc:35    | FilterAndSortCompletionResponse took 0.250ms
+(   3.015s) [comp-query   ]          timer.cc:35    | [complete] TryEnsureDocumentParsed took 0.0ms
+(   3.015s) [comp-query   ]          timer.cc:35    | [complete] Creating WorkingFile snapshot took 0.3ms
+(   3.015s) [stdout       ]          timer.cc:35    | [e2e] Running textDocument/completion took 1.1446ms
+(   3.015s) [diag-query   ]          timer.cc:35    | [diagnostics] clang_reparseTranslationUnit took 2.2182ms
+(   3.018s) [comp-query   ]          timer.cc:35    | [complete] clangCodeCompleteAt took 3.3228ms
+(   3.018s) [comp-query   ]          timer.cc:35    | [complete] Building 405 completion results took 0.194ms
+(   3.134s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   3.134s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   3.134s) [diag-query   ]          timer.cc:35    | [diagnostics] TryEnsureDocumentParsed took 0.0ms
+(   3.134s) [diag-query   ]          timer.cc:35    | [diagnostics] Creating WorkingFile snapshot took 0.2ms
+(   3.135s) [querydb      ]          timer.cc:35    | FilterAndSortCompletionResponse took 0.142ms
+(   3.135s) [stdout       ]          timer.cc:35    | [e2e] Running textDocument/completion took 0.669ms
+(   3.135s) [comp-query   ]          timer.cc:35    | [complete] TryEnsureDocumentParsed took 0.0ms
+(   3.135s) [comp-query   ]          timer.cc:35    | [complete] Creating WorkingFile snapshot took 0.3ms
+(   3.136s) [diag-query   ]          timer.cc:35    | [diagnostics] clang_reparseTranslationUnit took 2.2119ms
+(   3.137s) [comp-query   ]          timer.cc:35    | [complete] clangCodeCompleteAt took 1.1774ms
+(   3.137s) [comp-query   ]          timer.cc:35    | [complete] Building 405 completion results took 0.255ms
+(   3.513s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   3.514s) [diag-query   ]          timer.cc:35    | [diagnostics] TryEnsureDocumentParsed took 0.0ms
+(   3.514s) [diag-query   ]          timer.cc:35    | [diagnostics] Creating WorkingFile snapshot took 0.3ms
+(   3.517s) [diag-query   ]          timer.cc:35    | [diagnostics] clang_reparseTranslationUnit took 2.2873ms
+(   3.530s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   3.531s) [querydb      ]          timer.cc:35    | FilterAndSortCompletionResponse took 0.248ms
+(   3.531s) [stdout       ]          timer.cc:35    | [e2e] Running textDocument/completion took 0.848ms
+(   3.531s) [comp-query   ]          timer.cc:35    | [complete] TryEnsureDocumentParsed took 0.0ms
+(   3.531s) [comp-query   ]          timer.cc:35    | [complete] Creating WorkingFile snapshot took 0.3ms
+(   3.533s) [comp-query   ]          timer.cc:35    | [complete] clangCodeCompleteAt took 1.1708ms
+(   3.533s) [comp-query   ]          timer.cc:35    | [complete] Building 405 completion results took 0.194ms
+(   3.663s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   3.663s) [diag-query   ]          timer.cc:35    | [diagnostics] TryEnsureDocumentParsed took 0.0ms
+(   3.663s) [diag-query   ]          timer.cc:35    | [diagnostics] Creating WorkingFile snapshot took 0.3ms
+(   3.665s) [diag-query   ]          timer.cc:35    | [diagnostics] clang_reparseTranslationUnit took 1.1909ms
+(   4.214s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   4.214s) [diag-query   ]          timer.cc:35    | [diagnostics] TryEnsureDocumentParsed took 0.0ms
+(   4.214s) [diag-query   ]          timer.cc:35    | [diagnostics] Creating WorkingFile snapshot took 0.6ms
+(   4.216s) [diag-query   ]          timer.cc:35    | [diagnostics] clang_reparseTranslationUnit took 2.2381ms
+(   4.507s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   4.507s) [diag-query   ]          timer.cc:35    | [diagnostics] TryEnsureDocumentParsed took 0.1ms
+(   4.507s) [diag-query   ]          timer.cc:35    | [diagnostics] Creating WorkingFile snapshot took 0.9ms
+(   4.509s) [diag-query   ]          timer.cc:35    | [diagnostics] clang_reparseTranslationUnit took 2.2416ms
+(   4.524s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   4.524s) [querydb      ]          timer.cc:35    | FilterAndSortCompletionResponse took 0.202ms
+(   4.524s) [stdout       ]          timer.cc:35    | [e2e] Running textDocument/completion took 0.695ms
+(   4.525s) [comp-query   ]          timer.cc:35    | [complete] TryEnsureDocumentParsed took 0.0ms
+(   4.525s) [comp-query   ]          timer.cc:35    | [complete] Creating WorkingFile snapshot took 0.3ms
+(   4.526s) [comp-query   ]          timer.cc:35    | [complete] clangCodeCompleteAt took 1.1745ms
+(   4.527s) [comp-query   ]          timer.cc:35    | [complete] Building 405 completion results took 0.313ms
+(   4.693s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   4.693s) [diag-query   ]          timer.cc:35    | [diagnostics] TryEnsureDocumentParsed took 0.0ms
+(   4.693s) [diag-query   ]          timer.cc:35    | [diagnostics] Creating WorkingFile snapshot took 0.4ms
+(   4.696s) [diag-query   ]          timer.cc:35    | [diagnostics] clang_reparseTranslationUnit took 2.2848ms
+(   4.714s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   4.714s) [querydb      ]          timer.cc:35    | FilterAndSortCompletionResponse took 0.160ms
+(   4.715s) [stdout       ]          timer.cc:35    | [e2e] Running textDocument/completion took 0.735ms
+(   4.715s) [comp-query   ]          timer.cc:35    | [complete] TryEnsureDocumentParsed took 0.0ms
+(   4.715s) [comp-query   ]          timer.cc:35    | [complete] Creating WorkingFile snapshot took 0.3ms
+(   4.716s) [comp-query   ]          timer.cc:35    | [complete] clangCodeCompleteAt took 1.1290ms
+(   4.716s) [comp-query   ]          timer.cc:35    | [complete] Building 405 completion results took 0.193ms
+(   4.823s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   4.823s) [diag-query   ]          timer.cc:35    | [diagnostics] TryEnsureDocumentParsed took 0.0ms
+(   4.823s) [diag-query   ]          timer.cc:35    | [diagnostics] Creating WorkingFile snapshot took 0.2ms
+(   4.825s) [diag-query   ]          timer.cc:35    | [diagnostics] clang_reparseTranslationUnit took 2.2277ms
+(   4.878s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   4.879s) [querydb      ]          timer.cc:35    | FilterAndSortCompletionResponse took 0.82ms
+(   4.879s) [stdout       ]          timer.cc:35    | [e2e] Running textDocument/completion took 0.555ms
+(   4.879s) [comp-query   ]          timer.cc:35    | [complete] TryEnsureDocumentParsed took 0.1ms
+(   4.879s) [comp-query   ]          timer.cc:35    | [complete] Creating WorkingFile snapshot took 0.10ms
+(   4.881s) [comp-query   ]          timer.cc:35    | [complete] clangCodeCompleteAt took 1.1542ms
+(   4.881s) [comp-query   ]          timer.cc:35    | [complete] Building 405 completion results took 0.230ms
+(   5.211s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   5.211s) [diag-query   ]          timer.cc:35    | [diagnostics] TryEnsureDocumentParsed took 0.0ms
+(   5.212s) [diag-query   ]          timer.cc:35    | [diagnostics] Creating WorkingFile snapshot took 0.3ms
+(   5.233s) [diag-query   ]          timer.cc:35    | [diagnostics] clang_reparseTranslationUnit took 21.20998ms
+(   7.218s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   7.218s) [diag-query   ]          timer.cc:35    | [diagnostics] TryEnsureDocumentParsed took 0.0ms
+(   7.218s) [diag-query   ]          timer.cc:35    | [diagnostics] Creating WorkingFile snapshot took 0.2ms
+(   7.219s) [diag-query   ]          timer.cc:35    | [diagnostics] clang_reparseTranslationUnit took 1.1336ms
+(   8.954s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(   8.955s) [diag-query   ]          timer.cc:35    | [diagnostics] TryEnsureDocumentParsed took 0.2ms
+(   8.955s) [diag-query   ]          timer.cc:35    | [diagnostics] Creating WorkingFile snapshot took 0.4ms
+(   8.958s) [diag-query   ]          timer.cc:35    | [diagnostics] clang_reparseTranslationUnit took 3.3374ms
+(  10.906s) [stdin        ]            lsp.cc:25    | RecordPath: client=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c, normalized=/home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(  10.907s) [indexer0     ]          utils.cc:298   | Reading /home/osmanthus/Repositories/Private/kata/deadfish/src/.cache/@home@osmanthus@Repositories@Private@kata/deadfish@src@main.c
+(  10.907s) [comp-preload ] clang_complete.cc:410   | Creating completion session with arguments clang -working-directory=/home/osmanthus/Repositories/Private/kata/ /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c -resource-dir=/usr/lib/clang/7.0.0 -Wno-unknown-warning-option -fparse-all-comments -isystem/usr/local/include -isystem/usr/lib/clang/7.0.0/include -isystem/usr/include -fspell-checking
+(  10.907s) [indexer0     ]          utils.cc:298   | Reading /home/osmanthus/Repositories/Private/kata/deadfish/src/.cache/@home@osmanthus@Repositories@Private@kata/deadfish@src@main.c.json
+(  10.907s) [diag-query   ]          timer.cc:35    | [diagnostics] TryEnsureDocumentParsed took 0.1ms
+(  10.907s) [diag-query   ]          timer.cc:35    | [diagnostics] Creating WorkingFile snapshot took 0.4ms
+(  10.907s) [indexer0     ]import_pipeline.cc:182   | Timestamp has changed for /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(  10.907s) [indexer0     ]import_pipeline.cc:382   | Parsing /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(  10.907s) [indexer0     ]          utils.cc:298   | Reading /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(  10.912s) [diag-query   ]          timer.cc:35    | [diagnostics] clang_reparseTranslationUnit took 4.4692ms
+(  10.922s) [indexer0     ]import_pipeline.cc:412   | Emitting index result for /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(  10.922s) [indexer0     ]import_pipeline.cc:433   | Writing cached index to disk for /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c
+(  10.922s) [indexer2     ]import_pipeline.cc:492   | Built index update for /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c (is_delta=1)
+(  10.922s) [querydb      ]          timer.cc:35    | Applying index update for /home/osmanthus/Repositories/Private/kata/deadfish/src/main.c took 0.6ms
+(  10.925s) [querydb      ]           exit.cc:16    | Exiting; got exit message
+(  10.925s) [querydb      ]        loguru.hpp:1767  | atexit
