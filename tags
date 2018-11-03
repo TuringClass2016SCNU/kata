@@ -118,22 +118,25 @@ t_node	TreeVisiting/src/TreeFrontVisiting.c	/^typedef struct t_node{$/;"	s	file:
 t_node	TreeVisiting/src/TreeFrontVisiting.c	/^}t_node;$/;"	t	typeref:struct:t_node	file:
 t_node	TreeVisiting/src/TreeVisiting.c	/^typedef struct t_node{$/;"	s	file:
 t_node	TreeVisiting/src/TreeVisiting.c	/^}t_node;$/;"	t	typeref:struct:t_node	file:
-treeEndPrint1	TreeVisiting/src/TreeVisiting.c	/^void treeEndPrint1(t_node* n)$/;"	f	typeref:typename:void
-treeEndPrint2	TreeVisiting/src/TreeVisiting.c	/^void treeEndPrint2(t_node* root)$/;"	f	typeref:typename:void
+treeEndVisit1	TreeVisiting/src/TreeVisiting.c	/^void treeEndVisit1(t_node* n)$/;"	f	typeref:typename:void
+treeEndVisit2	TreeVisiting/src/TreeVisiting.c	/^void treeEndVisit2(t_node* root)$/;"	f	typeref:typename:void
 treeFrontPrint1	TreeVisiting/src/TreeFrontVisiting.c	/^void treeFrontPrint1(t_node* n)$/;"	f	typeref:typename:void
-treeFrontPrint1	TreeVisiting/src/TreeVisiting.c	/^void treeFrontPrint1(t_node* n)$/;"	f	typeref:typename:void
 treeFrontPrint2	TreeVisiting/src/TreeFrontVisiting.c	/^void treeFrontPrint2(t_node* n)$/;"	f	typeref:typename:void
-treeFrontPrint2	TreeVisiting/src/TreeVisiting.c	/^void treeFrontPrint2(t_node* root)$/;"	f	typeref:typename:void
-treeFrontPrint3	TreeVisiting/src/TreeVisiting.c	/^void treeFrontPrint3(t_node* root)$/;"	f	typeref:typename:void
-treeMiddlePrint1	TreeVisiting/src/TreeVisiting.c	/^void treeMiddlePrint1(t_node* n)$/;"	f	typeref:typename:void
-treeMiddlePrint2	TreeVisiting/src/TreeVisiting.c	/^void treeMiddlePrint2(t_node* root)$/;"	f	typeref:typename:void
+treeFrontVisit1	TreeVisiting/src/TreeVisiting.c	/^void treeFrontVisit1(t_node* n)$/;"	f	typeref:typename:void
+treeFrontVisit2	TreeVisiting/src/TreeVisiting.c	/^void treeFrontVisit2(t_node* root)$/;"	f	typeref:typename:void
+treeFrontVisit3	TreeVisiting/src/TreeVisiting.c	/^void treeFrontVisit3(t_node* root)$/;"	f	typeref:typename:void
+treeMiddleVisit1	TreeVisiting/src/TreeVisiting.c	/^void treeMiddleVisit1(t_node* n)$/;"	f	typeref:typename:void
+treeMiddleVisit2	TreeVisiting/src/TreeVisiting.c	/^void treeMiddleVisit2(t_node* root)$/;"	f	typeref:typename:void
 uninstall	deadfish/src/Makefile	/^uninstall:$/;"	t
 visit	TreeVisiting/src/TreeFrontVisiting.c	/^void visit(t_node* n)$/;"	f	typeref:typename:void
 visit	TreeVisiting/src/TreeVisiting.c	/^void visit(t_node* n)$/;"	f	typeref:typename:void
 visited	TreeVisiting/src/TreeVisiting.c	/^    unsigned char visited;$/;"	m	struct:t_node	typeref:typename:unsigned char	file:
 如何很骚地建一棵满二叉树	TreeVisiting/README.md	/^# 如何很骚地建一棵满二叉树$/;"	c
-数的前序遍历	TreeVisiting/README.md	/^# 数的前序遍历$/;"	c
-树的中序遍历	TreeVisiting/README.md	/^# 树的中序遍历$/;"	c
-树的后序遍历	TreeVisiting/README.md	/^# 树的后序遍历$/;"	c
+数的前序、中序、后序遍历	TreeVisiting/README.md	/^# 数的前序、中序、后序遍历$/;"	c
+无标记的做法	TreeVisiting/README.md	/^### 无标记的做法$/;"	S
+有标记的做法	TreeVisiting/README.md	/^### 有标记的做法$/;"	S
+满二叉树的编号	TreeVisiting/README.md	/^## 满二叉树的编号$/;"	s
 用链表的方式搭一个栈	TreeVisiting/README.md	/^# 用链表的方式搭一个栈$/;"	c
+递归做法	TreeVisiting/README.md	/^## 递归做法$/;"	s
+非递归做法	TreeVisiting/README.md	/^## 非递归做法$/;"	s
 题解	deadfish/notes.md	/^# 题解$/;"	c
