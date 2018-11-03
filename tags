@@ -1,0 +1,139 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/d080788/
+$(BIN_PATH)/$(BIN_NAME)	deadfish/src/Makefile	/^$(BIN_PATH)\/$(BIN_NAME): $(OBJECTS)$/;"	t
+$(BUILD_PATH)/%.o	deadfish/src/Makefile	/^$(BUILD_PATH)\/%.o: $(SRC_PATH)\/%.$(SRC_EXT)$/;"	t
+BIN_NAME	deadfish/src/Makefile	/^BIN_NAME := main$/;"	m
+BIN_PATH	deadfish/src/Makefile	/^debug: export BIN_PATH := bin\/debug$/;"	m
+BIN_PATH	deadfish/src/Makefile	/^install: export BIN_PATH := bin\/release$/;"	m
+BIN_PATH	deadfish/src/Makefile	/^release: export BIN_PATH := bin\/release$/;"	m
+BUILD_PATH	deadfish/src/Makefile	/^debug: export BUILD_PATH := build\/debug$/;"	m
+BUILD_PATH	deadfish/src/Makefile	/^release: export BUILD_PATH := build\/release$/;"	m
+CMD_PREFIX	deadfish/src/Makefile	/^	CMD_PREFIX :=$/;"	m
+CMD_PREFIX	deadfish/src/Makefile	/^export CMD_PREFIX := @$/;"	m
+COMPILE_FLAGS	deadfish/src/Makefile	/^COMPILE_FLAGS = -std=c++11 -Wall -Wextra -g$/;"	m
+CUR_TIME	deadfish/src/Makefile	/^	CUR_TIME = awk 'BEGIN{srand(); print srand()}'$/;"	m
+CXX	deadfish/src/Makefile	/^CXX ?= g++$/;"	m
+CXXFLAGS	deadfish/src/Makefile	/^debug: export CXXFLAGS := $(CXXFLAGS) $(COMPILE_FLAGS) $(DCOMPILE_FLAGS)$/;"	m
+CXXFLAGS	deadfish/src/Makefile	/^release: export CXXFLAGS := $(CXXFLAGS) $(COMPILE_FLAGS) $(RCOMPILE_FLAGS)$/;"	m
+DCOMPILE_FLAGS	deadfish/src/Makefile	/^DCOMPILE_FLAGS = -D DEBUG$/;"	m
+DEPS	deadfish/src/Makefile	/^DEPS = $(OBJECTS:.o=.d)$/;"	m
+DESTDIR	deadfish/src/Makefile	/^DESTDIR = \/$/;"	m
+DLINK_FLAGS	deadfish/src/Makefile	/^DLINK_FLAGS =$/;"	m
+END_TIME	deadfish/src/Makefile	/^	END_TIME = read st < $(TIME_FILE) ; \\$/;"	m
+INCLUDES	deadfish/src/Makefile	/^INCLUDES = -I $(SRC_PATH)$/;"	m
+INSTALL	deadfish/src/Makefile	/^INSTALL = install$/;"	m
+INSTALL_DATA	deadfish/src/Makefile	/^INSTALL_DATA = $(INSTALL) -m 644$/;"	m
+INSTALL_PREFIX	deadfish/src/Makefile	/^INSTALL_PREFIX = usr\/local$/;"	m
+INSTALL_PROGRAM	deadfish/src/Makefile	/^INSTALL_PROGRAM = $(INSTALL)$/;"	m
+Kata	README.md	/^# Kata$/;"	c
+LDFLAGS	deadfish/src/Makefile	/^debug: export LDFLAGS := $(LDFLAGS) $(LINK_FLAGS) $(DLINK_FLAGS)$/;"	m
+LDFLAGS	deadfish/src/Makefile	/^release: export LDFLAGS := $(LDFLAGS) $(LINK_FLAGS) $(RLINK_FLAGS)$/;"	m
+LIBS	deadfish/src/Makefile	/^LIBS =$/;"	m
+LINK_FLAGS	deadfish/src/Makefile	/^LINK_FLAGS =$/;"	m
+OBJECTS	deadfish/src/Makefile	/^OBJECTS = $(SOURCES:$(SRC_PATH)\/%.$(SRC_EXT)=$(BUILD_PATH)\/%.o)$/;"	m
+RCOMPILE_FLAGS	deadfish/src/Makefile	/^RCOMPILE_FLAGS = -D NDEBUG$/;"	m
+RLINK_FLAGS	deadfish/src/Makefile	/^RLINK_FLAGS =$/;"	m
+SHELL	deadfish/src/Makefile	/^SHELL = \/bin\/bash$/;"	m
+SOURCES	deadfish/src/Makefile	/^	SOURCES := $(call rwildcard, $(SRC_PATH), *.$(SRC_EXT))$/;"	m
+SOURCES	deadfish/src/Makefile	/^	SOURCES = $(shell find $(SRC_PATH) -name '*.$(SRC_EXT)' -printf '%T@\\t%p\\n' \\$/;"	m
+SOURCES	deadfish/src/Makefile	/^	SOURCES = $(shell find $(SRC_PATH) -name '*.$(SRC_EXT)' | sort -k 1nr | cut -f2-)$/;"	m
+SRC_PATH	deadfish/src/Makefile	/^SRC_PATH = .$/;"	m
+START_TIME	deadfish/src/Makefile	/^	START_TIME = $(CUR_TIME) > $(TIME_FILE)$/;"	m
+START_TIME	deadfish/src/Makefile	/^	START_TIME = date '+%s' > $(TIME_FILE)$/;"	m
+Solution	deadfish/src/main.cpp	/^class Solution {$/;"	c	file:
+TIME_FILE	deadfish/src/Makefile	/^	TIME_FILE = $(dir $@).$(notdir $@)_time$/;"	m
+UNAME_S	deadfish/src/Makefile	/^UNAME_S:=$(shell uname -s)$/;"	m
+USE_VERSION	deadfish/src/Makefile	/^	USE_VERSION := true$/;"	m
+USE_VERSION	deadfish/src/Makefile	/^USE_VERSION := false$/;"	m
+V	deadfish/src/Makefile	/^export V := false$/;"	m
+VERSION	deadfish/src/Makefile	/^	VERSION := $(shell git describe --tags --long --dirty --always | \\$/;"	m
+VERSION_HASH	deadfish/src/Makefile	/^	VERSION_HASH := $(word 5, $(VERSION))$/;"	m
+VERSION_MAJOR	deadfish/src/Makefile	/^	VERSION_MAJOR := $(word 1, $(VERSION))$/;"	m
+VERSION_MINOR	deadfish/src/Makefile	/^	VERSION_MINOR := $(word 2, $(VERSION))$/;"	m
+VERSION_PATCH	deadfish/src/Makefile	/^	VERSION_PATCH := $(word 3, $(VERSION))$/;"	m
+VERSION_REVISION	deadfish/src/Makefile	/^	VERSION_REVISION := $(word 4, $(VERSION))$/;"	m
+VERSION_STRING	deadfish/src/Makefile	/^	VERSION_STRING := \\$/;"	m
+all	deadfish/src/Makefile	/^all: $(BIN_PATH)\/$(BIN_NAME)$/;"	t
+autoBuildTree	TreeVisiting/src/TreeFrontVisiting.c	/^t_node* autoBuildTree(t_node* n,int data,int floor)$/;"	f	typeref:typename:t_node *
+autoBuildTree	TreeVisiting/src/TreeVisiting.c	/^t_node* autoBuildTree(t_node* n,int data,int floor)$/;"	f	typeref:typename:t_node *
+checkVisited	TreeVisiting/src/TreeVisiting.c	/^int checkVisited(t_node* node)$/;"	f	typeref:typename:int
+checker	TreeVisiting/src/TreeVisiting.c	/^unsigned char checker = 0;$/;"	v	typeref:typename:unsigned char
+clean	deadfish/src/Makefile	/^clean:$/;"	t
+data	TreeVisiting/src/TreeFrontVisiting.c	/^    int data;$/;"	m	struct:t_node	typeref:typename:int	file:
+data	TreeVisiting/src/TreeVisiting.c	/^    int data;$/;"	m	struct:t_node	typeref:typename:int	file:
+debug	deadfish/src/Makefile	/^debug: dirs$/;"	t
+debug	deadfish/src/Makefile	/^debug: export BIN_PATH := bin\/debug$/;"	t
+debug	deadfish/src/Makefile	/^debug: export BUILD_PATH := build\/debug$/;"	t
+debug	deadfish/src/Makefile	/^debug: export CXXFLAGS := $(CXXFLAGS) $(COMPILE_FLAGS) $(DCOMPILE_FLAGS)$/;"	t
+debug	deadfish/src/Makefile	/^debug: export LDFLAGS := $(LDFLAGS) $(LINK_FLAGS) $(DLINK_FLAGS)$/;"	t
+destroyTree	TreeVisiting/src/TreeFrontVisiting.c	/^void destroyTree(t_node* n)$/;"	f	typeref:typename:void
+destroyTree	TreeVisiting/src/TreeVisiting.c	/^void destroyTree(t_node* n)$/;"	f	typeref:typename:void
+dirs	deadfish/src/Makefile	/^dirs:$/;"	t
+install	deadfish/src/Makefile	/^install: export BIN_PATH := bin\/release$/;"	t
+install	deadfish/src/Makefile	/^install:$/;"	t
+left	TreeVisiting/src/TreeFrontVisiting.c	/^    struct t_node* left;$/;"	m	struct:t_node	typeref:struct:t_node *	file:
+left	TreeVisiting/src/TreeVisiting.c	/^    struct t_node* left;$/;"	m	struct:t_node	typeref:struct:t_node *	file:
+main	TreeVisiting/src/TreeFrontVisiting.c	/^int main()$/;"	f	typeref:typename:int
+main	TreeVisiting/src/TreeVisiting.c	/^int main()$/;"	f	typeref:typename:int
+main	deadfish/src/main.cpp	/^int main()$/;"	f	typeref:typename:int
+newChecker	TreeVisiting/src/TreeVisiting.c	/^void newChecker(int num)$/;"	f	typeref:typename:void
+next	TreeVisiting/src/TreeFrontVisiting.c	/^    struct s_node* next;$/;"	m	struct:s_node	typeref:struct:s_node *	file:
+next	TreeVisiting/src/TreeVisiting.c	/^    struct s_node* next;$/;"	m	struct:s_node	typeref:struct:s_node *	file:
+node	TreeVisiting/src/TreeFrontVisiting.c	/^    t_node* node;$/;"	m	struct:s_node	typeref:typename:t_node *	file:
+node	TreeVisiting/src/TreeVisiting.c	/^    t_node* node;$/;"	m	struct:s_node	typeref:typename:t_node *	file:
+parse	deadfish/src/main.cpp	/^  vector<int> parse(string cmd)$/;"	f	class:Solution	typeref:typename:vector<int>	file:
+parse_checker	deadfish/src/main.cpp	/^  void parse_checker()$/;"	f	class:Solution	typeref:typename:void	file:
+print-%	deadfish/src/Makefile	/^print-%: ; @echo $*=$($*)$/;"	t
+release	deadfish/src/Makefile	/^release: dirs$/;"	t
+release	deadfish/src/Makefile	/^release: export BIN_PATH := bin\/release$/;"	t
+release	deadfish/src/Makefile	/^release: export BUILD_PATH := build\/release$/;"	t
+release	deadfish/src/Makefile	/^release: export CXXFLAGS := $(CXXFLAGS) $(COMPILE_FLAGS) $(RCOMPILE_FLAGS)$/;"	t
+release	deadfish/src/Makefile	/^release: export LDFLAGS := $(LDFLAGS) $(LINK_FLAGS) $(RLINK_FLAGS)$/;"	t
+right	TreeVisiting/src/TreeFrontVisiting.c	/^    struct t_node* right;$/;"	m	struct:t_node	typeref:struct:t_node *	file:
+right	TreeVisiting/src/TreeVisiting.c	/^    struct t_node* right;$/;"	m	struct:t_node	typeref:struct:t_node *	file:
+run	deadfish/src/main.cpp	/^  void run()$/;"	f	class:Solution	typeref:typename:void	file:
+rwildcard	deadfish/src/Makefile	/^rwildcard = $(foreach d, $(wildcard $1*), $(call rwildcard,$d\/,$2) \\$/;"	m
+s_node	TreeVisiting/src/TreeFrontVisiting.c	/^typedef struct s_node{$/;"	s	file:
+s_node	TreeVisiting/src/TreeFrontVisiting.c	/^}s_node;$/;"	t	typeref:struct:s_node	file:
+s_node	TreeVisiting/src/TreeVisiting.c	/^typedef struct s_node{$/;"	s	file:
+s_node	TreeVisiting/src/TreeVisiting.c	/^}s_node;$/;"	t	typeref:struct:s_node	file:
+stackBuild	TreeVisiting/src/TreeFrontVisiting.c	/^s_node* stackBuild()$/;"	f	typeref:typename:s_node *
+stackBuild	TreeVisiting/src/TreeVisiting.c	/^s_node* stackBuild()$/;"	f	typeref:typename:s_node *
+stackDestory	TreeVisiting/src/TreeFrontVisiting.c	/^void stackDestory(s_node* head)$/;"	f	typeref:typename:void
+stackDestory	TreeVisiting/src/TreeVisiting.c	/^void stackDestory(s_node* head)$/;"	f	typeref:typename:void
+stackIsEmpty	TreeVisiting/src/TreeFrontVisiting.c	/^int stackIsEmpty(s_node* head)$/;"	f	typeref:typename:int
+stackIsEmpty	TreeVisiting/src/TreeVisiting.c	/^int stackIsEmpty(s_node* head)$/;"	f	typeref:typename:int
+stackPop	TreeVisiting/src/TreeFrontVisiting.c	/^s_node* stackPop(s_node* head)$/;"	f	typeref:typename:s_node *
+stackPop	TreeVisiting/src/TreeVisiting.c	/^s_node* stackPop(s_node* head)$/;"	f	typeref:typename:s_node *
+stackPush	TreeVisiting/src/TreeFrontVisiting.c	/^s_node* stackPush(s_node* head,t_node* t_data)$/;"	f	typeref:typename:s_node *
+stackPush	TreeVisiting/src/TreeVisiting.c	/^s_node* stackPush(s_node* head,t_node* t_data)$/;"	f	typeref:typename:s_node *
+stackTop	TreeVisiting/src/TreeFrontVisiting.c	/^t_node* stackTop(s_node* head)$/;"	f	typeref:typename:t_node *
+stackTop	TreeVisiting/src/TreeVisiting.c	/^t_node* stackTop(s_node* head)$/;"	f	typeref:typename:t_node *
+t_node	TreeVisiting/src/TreeFrontVisiting.c	/^typedef struct t_node{$/;"	s	file:
+t_node	TreeVisiting/src/TreeFrontVisiting.c	/^}t_node;$/;"	t	typeref:struct:t_node	file:
+t_node	TreeVisiting/src/TreeVisiting.c	/^typedef struct t_node{$/;"	s	file:
+t_node	TreeVisiting/src/TreeVisiting.c	/^}t_node;$/;"	t	typeref:struct:t_node	file:
+treeEndPrint1	TreeVisiting/src/TreeVisiting.c	/^void treeEndPrint1(t_node* n)$/;"	f	typeref:typename:void
+treeEndPrint2	TreeVisiting/src/TreeVisiting.c	/^void treeEndPrint2(t_node* root)$/;"	f	typeref:typename:void
+treeFrontPrint1	TreeVisiting/src/TreeFrontVisiting.c	/^void treeFrontPrint1(t_node* n)$/;"	f	typeref:typename:void
+treeFrontPrint1	TreeVisiting/src/TreeVisiting.c	/^void treeFrontPrint1(t_node* n)$/;"	f	typeref:typename:void
+treeFrontPrint2	TreeVisiting/src/TreeFrontVisiting.c	/^void treeFrontPrint2(t_node* n)$/;"	f	typeref:typename:void
+treeFrontPrint2	TreeVisiting/src/TreeVisiting.c	/^void treeFrontPrint2(t_node* root)$/;"	f	typeref:typename:void
+treeFrontPrint3	TreeVisiting/src/TreeVisiting.c	/^void treeFrontPrint3(t_node* root)$/;"	f	typeref:typename:void
+treeMiddlePrint1	TreeVisiting/src/TreeVisiting.c	/^void treeMiddlePrint1(t_node* n)$/;"	f	typeref:typename:void
+treeMiddlePrint2	TreeVisiting/src/TreeVisiting.c	/^void treeMiddlePrint2(t_node* root)$/;"	f	typeref:typename:void
+uninstall	deadfish/src/Makefile	/^uninstall:$/;"	t
+visit	TreeVisiting/src/TreeFrontVisiting.c	/^void visit(t_node* n)$/;"	f	typeref:typename:void
+visit	TreeVisiting/src/TreeVisiting.c	/^void visit(t_node* n)$/;"	f	typeref:typename:void
+visited	TreeVisiting/src/TreeVisiting.c	/^    unsigned char visited;$/;"	m	struct:t_node	typeref:typename:unsigned char	file:
+如何很骚地建一棵满二叉树	TreeVisiting/README.md	/^# 如何很骚地建一棵满二叉树$/;"	c
+数的前序遍历	TreeVisiting/README.md	/^# 数的前序遍历$/;"	c
+树的中序遍历	TreeVisiting/README.md	/^# 树的中序遍历$/;"	c
+树的后序遍历	TreeVisiting/README.md	/^# 树的后序遍历$/;"	c
+用链表的方式搭一个栈	TreeVisiting/README.md	/^# 用链表的方式搭一个栈$/;"	c
+题解	deadfish/notes.md	/^# 题解$/;"	c
